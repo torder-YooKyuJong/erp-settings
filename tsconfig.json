@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es5",
+    "module": "commonjs",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,9 +17,13 @@
       "webpack-env"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@assets": ["src/assets"],
+      "@router": ["src/router"],
+      "@store": ["src/store"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"],
+      "@views" :["src/views"],
+      "@views/*" :["src/views/*"]
     },
     "lib": [
       "esnext",
